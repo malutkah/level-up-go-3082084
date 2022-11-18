@@ -22,6 +22,5 @@ func main() {
 	bday := flag.String("bday", "", "Your next bday in YYYY-MM-DD format")
 	flag.Parse()
 	target := parseTime(*bday)
-	log.Printf("You have %d sleeps until your birthday. Hurray!",
-		int(calcSleeps(target)))
+	log.Printf("You have %d sleeps until your birthday. Hurray!", int(calcSleeps(target)))
 }
